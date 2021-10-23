@@ -26,7 +26,7 @@ Also for easy navigation within the pages of the site
 
 **Navigation Journy**
 
-<img style="width:200px" src="https://i.ibb.co/7r5LsQR/navigation.gif">
+<img style="width:200px" src="https://i.ibb.co/Gxg0cHp/navigation-2.gif">
 
 <br><br>
 

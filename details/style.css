@@ -1,3 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+
+   
+   }
+    
+body {
+    display: flex;
+    flex-direction: column;
+background-color: #b9c2c9;
+   
+}
+
+header {
+    position: fixed;
+   
+  height:30px;
+  width: 100%;
+  
+  
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) grayscale(0.5) opacity(0.8);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+   
+   .headerimg {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        box-sizing: inherit;
+    }
+    #headerimg1 {
+        height: 20px;
+        margin-top: 5px;
+    }
+
+
+   
+#imge {
+    width:100%;  
+    height :50%;
+    position: static;
+    
+}
+#form1 {
+position: relative;
+    margin-top: -80%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+#button1 {
+    margin-left: 5%;
+    height: 60px;
+    width: 60px;
+    background: url(/details/image/chevron-circle-left.png) no-repeat scroll 8px 12px;
+background-color: white;
+      height: 44px;
+      width: 44px;
+      border-radius: 50%;
+      border: 1px  ;
+}
+#button2 {
+    margin-right: 5%;
+    height: 44px;
+    width: 44px;
+    background: url(/details/image/heart.png) no-repeat scroll 9px 12px;
+    background-color: white;
+    height: 44px;
+      width: 44px;
+      border-radius: 50%;
+      border: 1px  ;
+
+}
+.box {
+    margin-top:200px;
+    position: sticky;
+   
+        margin-left: 10%;
+        
+            display: flex;
+        justify-content:flex-start;  
+    flex-direction: column;
+        width: 80%;
+        height: 250px;
+        background-color: #b9c2c9;
+        border-radius: 4%
+
+}
+
+    
+
+.add{
+    margin-top: 5%;
+    background-color: #d5e0d5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10%;
+    color:#afbac2;
+    font-family: Cera;
+    font-size: 12px;
+}
+#add {
+    
+    height: 30px;
+    width: 30px;
+    background: url(/details/image/Vector.png) no-repeat scroll 7px 7px;
+    background-color: white;
+   
+      border-radius: 30%;
+      border: 1px  ;
+}
+#boxp {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 24px;
+    font-family: Recoleta;
+}
+.rating {
+    margin-left: 5%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    color:rgb(117, 111, 111);
+}
+#pheart {
+    margin-right: 3%;
+    height: 20px;
+    width: 20px;
+}
+.time {
+
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+#time1 {
+    margin-left: 5%;
+    margin-top: 5%;
+
+}
+#time2 {
+    margin-top: 5%;
+
+}
+#time3{
+    margin-top: 5%;
+    margin-right: 5%;
+}
+.reviwes {
+    border-radius: 5%;
+    background-color: white;
+    margin-left: 8%;
+    margin-top: 10%;
+    margin-right: 8%;
+}
+.toprev {
+    font-family:Cera-M ;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-weight: bold;
+}
+.personcom {
+    font-family:Recoleta ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 14px;
+}
+
+ul {
+    position: sticky;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#readall{
+color: rgb(216, 156, 45);
+}
+#profilepic {
+    margin-right: 4px;
+    width: 20%;
+    height: 20%;
+
+}
+#heartimg {
+    margin-right: 4px;
+    width: 20%;
+    height: 20%;
+
+}
+#dayscount{
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: silver;
+}
+
+footer{
+    margin-top: 14%;
+    background-color: white;
+}
 /* Fonts Declaration */
 
 @font-face {

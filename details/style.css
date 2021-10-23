@@ -8,7 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
-
+background-color: #b9c2c9;
    
 }
 
@@ -23,8 +23,9 @@ header {
   backdrop-filter: blur(10px) grayscale(0.5) opacity(0.8);
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
-
+  z-index: 1;
 }
+
    
    .headerimg {
         width: 100%;
@@ -47,8 +48,8 @@ header {
     
 }
 #form1 {
-position: fixed;
-    margin-top: 20%;
+position: relative;
+    margin-top: -80%;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -80,9 +81,9 @@ background-color: white;
 
 }
 .box {
-    
-    position: static;
-    margin-top: -10%;
+    margin-top:200px;
+    position: sticky;
+   
         margin-left: 10%;
         
             display: flex;
@@ -106,13 +107,15 @@ background-color: white;
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 10%;
-    color:#b9c2c9;
+    color:#afbac2;
+    font-family: Cera;
+    font-size: 12px;
 }
 #add {
     
     height: 30px;
     width: 30px;
-    background: url(Vector.png) no-repeat scroll 7px 7px;
+    background: url(/details/image/Vector.png) no-repeat scroll 7px 7px;
     background-color: white;
    
       border-radius: 30%;
@@ -123,12 +126,14 @@ background-color: white;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 24px;
+    font-family: Recoleta;
 }
 .rating {
     margin-left: 5%;
     margin-top: 5%;
     display: flex;
     flex-direction: row;
+    color:rgb(117, 111, 111);
 }
 #pheart {
     margin-right: 3%;
@@ -159,24 +164,30 @@ background-color: white;
     margin-right: 5%;
 }
 .reviwes {
+    border-radius: 5%;
+    background-color: white;
     margin-left: 8%;
     margin-top: 10%;
     margin-right: 8%;
 }
 .toprev {
+    font-family:Cera-M ;
     display: flex;
     justify-content: space-between;
-    margin-top: 5%;
+    margin-top: 15%;
     margin-right: 5%;
     margin-left: 5%;
+    font-weight: bold;
 }
 .personcom {
+    font-family:Recoleta ;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 5%;
     margin-right: 5%;
     margin-left: 5%;
+    margin-bottom: 14px;
 }
 
 ul {
@@ -189,3 +200,59 @@ ul {
     margin-left: 10%;
     margin-right: 10%;
 }
+#readall{
+color: rgb(216, 156, 45);
+}
+#profilepic {
+    margin-right: 4px;
+    width: 20%;
+    height: 20%;
+
+}
+#heartimg {
+    margin-right: 4px;
+    width: 20%;
+    height: 20%;
+
+}
+#dayscount{
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: silver;
+}
+
+footer{
+    margin-top: 14%;
+    background-color: white;
+}
+/* Fonts Declaration */
+
+@font-face {
+    font-family: 'Cera-M';
+    src: url('/assets/fonts/CeraPro-Medium.woff2') format('woff2'),
+        url('/assets/fonts/CeraPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera';
+    src: url('/assets/fonts/CeraPro-Regular.woff2') format('woff2'),
+        url('/assets/fonts/CeraPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Recoleta';
+    src: url('/assets/fonts/Recoleta-RegularDEMO.woff2') format('woff2'),
+        url('/assets/fonts/Recoleta-RegularDEMO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Fonts Declaration */

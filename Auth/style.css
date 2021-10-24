@@ -1,30 +1,37 @@
 /* Fonts Declaration */
 
 @font-face {
-    font-family: 'Cera-M';
-    src: url('/assets/fonts/CeraPro-Medium.woff2') format('woff2'),
-        url('/assets/fonts/CeraPro-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cera';
-    src: url('/assets/fonts/CeraPro-Regular.woff2') format('woff2'),
-        url('/assets/fonts/CeraPro-Regular.woff') format('woff');
+    font-family: "Cera";
+    src: url("assets/fonts/CeraPro-Regular.woff2") format("woff2"),
+    url("assets/fonts/CeraPro-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Recoleta';
-    src: url('/assets/fonts/Recoleta-RegularDEMO.woff2') format('woff2'),
-        url('/assets/fonts/Recoleta-RegularDEMO.woff') format('woff');
+    font-family: "Recoleta";
+    src: url("assets/fonts/Recoleta-RegularDEMO.woff2") format("woff2"),
+    url("assets/fonts/Recoleta-RegularDEMO.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
 
 /* Fonts Declaration */
+:root {
+--primary-color: #F2F3F4;
+--secondary-color: #FF8527;
+--third-color: #E1E2E3;
+}
+* {
+margin: 0;
+padding: 0;
+}
+.imagheader img{
+position:relative;
+width: 100%;
+height: 30vh;
+z-index: 1;
+}

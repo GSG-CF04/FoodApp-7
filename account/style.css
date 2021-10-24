@@ -1,30 +1,304 @@
 /* Fonts Declaration */
 
 @font-face {
-    font-family: 'Cera-M';
-    src: url('/assets/fonts/CeraPro-Medium.woff2') format('woff2'),
-        url('/assets/fonts/CeraPro-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cera';
-    src: url('/assets/fonts/CeraPro-Regular.woff2') format('woff2'),
-        url('/assets/fonts/CeraPro-Regular.woff') format('woff');
+    font-family: "Cera";
+    src: url("../assets/fonts/CeraPro-Regular.woff2") format("woff2"),
+      url("../assets/fonts/CeraPro-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
-
-@font-face {
-    font-family: 'Recoleta';
-    src: url('/assets/fonts/Recoleta-RegularDEMO.woff2') format('woff2'),
-        url('/assets/fonts/Recoleta-RegularDEMO.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* Fonts Declaration */
+  }
+  
+  /* Fonts Declaration */
+  
+  /* universal */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cera";
+  }
+  
+  /* universal */
+  
+  /* header */
+  
+  nav {
+    width: 100%;
+    padding: 20px 10px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  #header-img {
+    z-index: -2;
+    width: 100%;
+  }
+  
+  #avatar {
+    position: absolute;
+    bottom: -43px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 7px solid white;
+  }
+  
+  /* header */
+  
+  /* info card */
+  
+  #info-card {
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 64px 0px 16px;
+    border-radius: 16px;
+    width: 90%;
+    height: 165px;
+    margin: 0 auto;
+    position: relative;
+    top: -32px;
+    justify-content: flex-end;
+  }
+  
+  h3 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  
+  p {
+    color: #636773;
+    font-size: 16px;
+  }
+  
+  /* info card */
+  
+  /* btn */
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+  
+  .btn {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 900;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 3.5rem / 100%;
+    position: relative;
+    min-width: 10.5rem;
+    max-width: 90vw;
+    overflow: hidden;
+    border: 0;
+    cursor: pointer;
+    margin: 8px;
+  }
+  
+  .btn--white {
+    background-color: white;
+  }
+  
+  .btn--orange {
+    background-color: #ff8527;
+  }
+  
+  span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .btn--white span {
+    color: #636773;
+  }
+  
+  .btn--orange span {
+    color: #fff;
+  }
+  
+  /* btn */
+  
+  /* list tiles */
+  
+  .list-tile {
+    display: flex;
+    padding: 16px 16px;
+    border-top: 1px solid #bbbbbb;
+    width: 100%;
+  }
+  
+  .photo {
+    height: 80px;
+    width: 78px;
+    object-fit: cover;
+    border-radius: 8px;
+  
+    margin: 10px;
+  }
+  
+  .content {
+    flex-grow: 2;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .head-p {
+    color: #636773;
+    font-size: 12px;
+  
+    letter-spacing: 0.023em;
+  }
+  
+  .content-p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .content-p:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+  .imgs {
+    display: flex;
+    align-self: flex-start;
+  }
+  
+  a {
+    display: none;
+  }
+  
+  /* --------------------------------------------- */
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    a {
+      display: none;
+    }
+  
+    nav {
+      padding: 40px 27px 0px 27px;
+    }
+  
+    #header-img {
+      height: 250px;
+      object-fit: cover;
+    }
+  
+    .tiles {
+      margin-top: 20px;
+    }
+  
+    .photo {
+      height: 120px;
+      width: 110px;
+      border-radius: 11px;
+    }
+  
+    .head-p {
+      font-size: 14px;
+    }
+  
+    .content-p {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+  
+    .buttons {
+      background-color: white;
+      width: 100%;
+      position: sticky;
+      top: 0;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    nav {
+      display: none;
+    }
+  
+    #avatar {
+      bottom: 10px;
+    }
+  
+    #header-img {
+      height: 250px;
+      object-fit: cover;
+    }
+  
+    .tiles {
+      display: flex;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      padding: 15px;
+      justify-content: space-evenly;
+    }
+  
+    .photo {
+      height: 120px;
+      width: 110px;
+      border-radius: 11px;
+    }
+  
+    .head-p {
+      font-size: 14px;
+    }
+  
+    .content-p {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+  
+    a {
+      display: inherit;
+      position: inherit;
+      left: 60px;
+      top: -28px;
+    }
+  
+    #new-edit {
+      width: 40px;
+      z-index: 1;
+    }
+  
+    .buttons {
+      background-color: white;
+      width: 100%;
+      position: sticky;
+      top: 0;
+    }
+  
+    #info-card {
+      top: -79px;
+    }
+  
+    .list-tile {
+      width: 40%;
+    }
+  }
+  

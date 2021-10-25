@@ -34,6 +34,14 @@ body {
   font-size: 14px;
 }
 
+a:active,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 /* Universals */
 
 /* ------------------------------------------------------------------- */
@@ -42,6 +50,9 @@ body {
 
 header {
   border-bottom: solid #d6d6d6 1px;
+  position: sticky;
+  top: 0;
+  height: 52px;
 }
 
 .header-row {
@@ -57,11 +68,9 @@ header {
   padding-top: 6px;
 }
 
-.header-row > a:active {
-  color: black;
-}
-
-.header-row > a:visited {
+.header-row > a:active,
+.header-row > a:visited,
+.header-row > a:link {
   color: black;
 }
 
@@ -156,7 +165,7 @@ span a {
 
 .container {
   position: sticky;
-  top: 0;
+  top: 52px;
 }
 
 .nav-item a,

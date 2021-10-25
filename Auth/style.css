@@ -1,30 +1,166 @@
 /* Fonts Declaration */
 
 @font-face {
-    font-family: 'Cera-M';
-    src: url('/assets/fonts/CeraPro-Medium.woff2') format('woff2'),
-        url('/assets/fonts/CeraPro-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Cera';
-    src: url('/assets/fonts/CeraPro-Regular.woff2') format('woff2'),
-        url('/assets/fonts/CeraPro-Regular.woff') format('woff');
+    font-family: "Cera";
+    src: url("assets/fonts/CeraPro-Regular.woff2") format("woff2"),
+    url("assets/fonts/CeraPro-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Recoleta';
-    src: url('/assets/fonts/Recoleta-RegularDEMO.woff2') format('woff2'),
-        url('/assets/fonts/Recoleta-RegularDEMO.woff') format('woff');
+    font-family: "Recoleta";
+    src: url("assets/fonts/Recoleta-RegularDEMO.woff2") format("woff2"),
+    url("assets/fonts/Recoleta-RegularDEMO.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
 
 /* Fonts Declaration */
+:root {
+--primary-color: #F2F3F4;
+--secondary-color: #FF8527;
+--third-color: #E1E2E3;
+}
+* {
+margin: 0;
+padding: 0;
+}
+.imgHeader img{
+position:relative;
+width: 100%;
+height: 30vh;
+z-index: 1;
+}
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    background-color:white;
+    margin-top: -10px;
+    border-radius: 10px;
+    border-color: crimson;
+    z-index: 2;
+    margin-top: 10px;   
+    }        
+    /* class of div mallika*/
+    .content-Mallika h1{
+    text-align: center;
+    font-family: "Recoleta";
+    }
+    .content-Mallika p{
+        padding-bottom: 0.5em;
+        text-align: center;
+        font-family: "Cera";
+    }
+    
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+        
+    }
+    .flex-row input[type="text"]{
+    
+        border-style: none;
+    }    
+    .flex-row img{
+    width:30px;
+    padding-right: 10px;
+    }
+    .flex-row p{
+    text-align: center;
+    padding-top: 5px;
+    }
+    
+    .flex-row .Button-OTP{
+    margin-top: 20px;
+    width: 350px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    border: var(--secondary-color);
+    text-align: center;
+    cursor: pointer;
+    }
+    .OR-line{
+        display:flex;
+        flex-direction: row;
+        margin-top: 30px;
+        color:rgb(158, 158, 157);
+    
+    }
+    .OR-line hr{
+        width: 120px;
+        margin-top: 5px;
+        left: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .Button_apple{
+        display: flex;
+        flex-direction: row;
+        width: 330px;
+        border:1px solid rgb(158, 158, 157);
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+        padding-left: 20px;
+        margin-top: 20px;
+    
+    
+    }
+    .Button_apple p{
+    
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    
+    .Button-facebook{
+        display: flex;
+        flex-direction: row;
+        width: 160px;
+        border:1px solid rgb(158, 158, 157);
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+        padding: 1px 5px 1px 5px;
+        margin: 5px 5px 1px 5px;
+    }
+.Auth-footer{    
+text-align-last: center;
+margin-top: 20px;
+}
+.Auth-footer ul{
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-content:center;
+}
+.Auth-footer li{
+display: inline-block;
+text-align: center;
+font-size: 14px;
+text-decoration: underline;
+padding: 4px;
+cursor: pointer;
+}
+.Auth-footer p{
+font-size: 14px;
+font-family: "Cera";
+}
+ /* --------------------Responsive screen------------------------- */
+@media screen and (min-width: 1024px) {
+.imgHeader img{
+    position:relative;
+    width: 100%;
+    height: 60vh;
+    z-index: 1;
+    } 
+}
